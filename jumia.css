@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #777; 
+}
+
+header{
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    padding-left: 70px;
+}
+
+ .jumia{
+    font-size: 12px;
+    color:#E07E1B ;
+    padding-left: 3px;
+ }
+
+  
+.col{
+    display: flex;
+    align-items: center;
+    padding-left: 400px;
+}
+
+.col img{
+    width: 58%;
+    height: 11vh;
+    
+}
+
+.col-2 img{
+    width: 75%;
+    height: 5vh;
+    padding-top: 5px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+ .col-2 img:hover{
+  filter: grayscale(0);
+
+}
+
+.col-3{
+    display: flex;
+    background-color: #fff;
+    height: 14vh;
+}
+
+.col-3 img{
+    width:22%;
+    height: 100%;
+}
+
+.two-forms{
+    display: flex;
+    margin-top: 17px;
+    display: flex;
+    gap: 10px;
+}
+
+
+  .input-field{
+     font-size: 15px;
+     background:#fff;
+     color: #777;
+     height: 40px;
+     width: 200%;
+     padding: 0 10px 0 45px;
+     border: 1px solid #000;
+     border-radius: 5px;
+     outline: none;
+     transition: .2s ease;
+ }
+ 
+   ::-webkit-input-placeholder{
+     color: #333;
+ }
+ 
+  .input-box i{
+     position: relative;
+     top: -35px;
+     left: 17px;
+     color: #333;
+ }
+
+ .btn{
+    padding: 10px 20px;
+    margin-left: 240px;
+    margin-bottom: 20px;
+    background-color:#F68B1E ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #E07E1B;
+}
+
+
+.menu-bar{
+   
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+ .menu-bar ul li a:hover{
+    border-radius: 3px;
+    color: #F68B1E;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #F68B1E;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom:1px dotted #fff ;
+    color: #000;
+    border-radius: 0;
+    font-size: 0.89rem;
+    background: transparent;
+    text-align: left;
+}
+
+.menu-bar ul li:hover:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover:hover .sub-menu-1 ul li a:hover{
+   color: #F68B1E;
+}
+
+
+.menu-bar .menu-1{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bttn{
+    background-color: #F68B1E;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+ .bttn:hover{
+    background-color: #E07E1B;
+ }
+
+ .bttn img{
+    position: relative;
+    align-items: center;
+    top:6px;
+    left: -12px;
+   
+}
+
+.menu-bar img{
+     position: relative;
+     top: 5px;
+    left: -12px;
+    width: 20px;
+}
+
+
+.col-4{
+    display: flex;
+    
+}
+
+.col-5{
+    background-color: #fff;
+    width: 16.5%;
+    height: 70vh;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    line-height: 2.5;
+    margin-left: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+p:hover{
+    color: #E07E1B;
+}
+
+
+
+/*Carousel styles */
+.carousel {
+     position: relative;
+     max-width: 700px; /* Width of the carousel */
+     margin: 20px auto; /* Centering */
+     height: 100vh;
+     margin-left: 20px;
+}
+
+.carousel-images{
+    display: flex;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .carousel-images img {
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+
+
+.next{
+    position: absolute;
+    top:35%;
+    transform:translateY(-50%);
+    color: transparent;
+    background-color: transparent;
+    border-radius: 50px;
+    border: none;
+    width: 40px;
+    padding: 9px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+.next:hover{
+    background-color:#777;
+    color: #fff;
+}
+
+.prev{
+    position: absolute;
+    top:35%;
+    transform:translateY(-50%);
+    color: transparent;
+    background-color:transparent;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    padding: 9px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+.prev:hover{
+    background-color:#777;
+    color: #fff
+}
+.prev{
+    left: 10px;
+}
+
+.next {
+    right: 10px; /* Position for next button */
+}
+
+
+
+.col-6{
+    background-color: #fff;
+    margin-right: 53px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display:flex;
+    border-radius: 10px;
+    height: 34vh;
+    width: 18%;
+}
+
+.col-6 img{
+  width: 20%;
+  height: 9vh;
+  padding-top: 17px;
+  padding-left: 10px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.col-6 h4{
+    padding-top: 29px;
+    line-height: 2.5px;
+}
+
+
+
+.container{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+.container-images{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+   
+   
+}
+
+.container-images img{
+    width: 15.8%;
+    height: 50%;
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    transition: 0.5s;
+   
+}
+
+.container-images img:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .col, .col-4, .col-5, .col-6, .container-images {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .col img, .col-2 img {
+        width: 80%; /* Adjust the size for mobile */
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    .carousel-images img {
+        height: auto;
+    }
+
+    .col-5 {
+        width: 90%;
+        margin-left: 0;
+    }
+}

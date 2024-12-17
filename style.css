@@ -1,0 +1,737 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background:#4AB67A;
+}
+.head{
+    background:#4AB67A;
+    text-align: center;
+}
+.heads {
+    display: flex; 
+    align-items: center; /* Center align items vertically */
+    width: 100%;
+    background: #F1F1F2; 
+    padding: 0px;
+    color: #333; /* Darker text for better contrast */
+}
+
+.heads-1 {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; /* Align items to the left */
+    flex: 1;
+    margin-left: 205px;
+}
+
+.heads-1 img {
+    width: 15px; /* Small image size */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.jumia {
+    font-size: 12px; 
+    color: #F68B1E;
+}
+
+.heads-2 {
+    display: flex;
+    flex: 1;
+    margin-right: 310px;
+}
+
+.heads-2 img {
+    width: 100px; 
+    filter: grayscale(100%);
+}
+.heads-2 img:hover{
+    filter: grayscale(0);
+}
+
+.heads img {
+    max-width: 100%; 
+    height: auto; 
+}
+@media (max-width: 480px) {
+    .head {
+        padding: 10px; /* Add padding for better spacing */
+    }
+        .head {
+            padding: 10px; /* Add some padding for smaller screens */
+        }
+    
+        .head img {
+            width: 90%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+    
+
+    .heads {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .heads-1 {
+        justify-content: center; /* Center contents in heads-1 */
+        margin: 0; /* Remove left margin for better alignment */
+        margin-bottom: 10px; /* Space between heads-1 and heads-2 */
+    }
+
+    .heads-1 img {
+        width: 25px; /* Slightly larger image size for better visibility */
+    }
+
+    .jumia {
+        text-align: center; /* Center text */
+        font-size: 14px; /* Increase font size for better readability */
+        margin-top: 5px; /* Space between image and text */
+    }
+
+    .heads-2 {
+        justify-content: center; /* Center image in heads-2 */
+        margin: 0; /* Remove right margin for better alignment */
+    }
+
+    .heads-2 img {
+        width: 80px; /* Adjust image size for smaller screens */
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color:#ffffff; 
+    padding: 0 80px;
+}
+
+.logo{
+    margin-left: 120px;
+}
+.logo img{
+  width: 70%;
+}
+
+.nav-link {
+    margin-left: 20px; 
+    text-decoration: none; 
+    color: #333; 
+    font-size: 20px; 
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    color: #F68B1E; /* Change color on hover */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 540px; /* Adjust width as needed */
+    border: 2px solid #A2A2A5;
+    border-radius: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #F68B1E; /* Button color */
+    color: white;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #D76B1D; /* Darker shade on hover */
+}
+
+.search-results {
+    margin-top: 2px;
+    text-align: left; /* Align text left for results */
+}
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 10px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .logo {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Space below the logo */
+    }
+
+    .logo img {
+        width: 80%; /* Adjust logo size for better visibility */
+    }
+
+    .nav-links {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Space below navigation links */
+    }
+
+    .nav-link {
+        margin-left: 10px; /* Reduced margin between links */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .search-bar {
+        margin-right: 0; /* Remove right margin */
+        gap: 10px; /* Reduced gap */
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: center; /* Center align elements */
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%; /* Full width for better usability */
+        margin-bottom: 10px; /* Space below the input */
+    }
+
+    .search-bar button {
+        width: 90%; 
+    }
+}
+.banner {
+    height: 800px; 
+    background: url(images/banner.gif) no-repeat center; 
+    background-size: cover; /* Cover the entire area */
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 200px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 150px; 
+    }
+}.nav-links {
+    text-align: center;
+    width: 50%;
+    margin-right: 5.5rem;
+}
+
+.nav-links ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.nav-links ul li {
+    width: 120px;
+    margin: 0px;
+    padding: 0;
+    position: relative; /* Make sure sub-menu is positioned relative to the list item */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links ul li a:hover {
+    border-radius: 3px;
+    color: #F68B1E;
+}
+
+/* Hide the sub-menu by default */
+.sub-menu-1 {
+    display: none; /* Start with the sub-menu hidden */
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #F68B1E;
+    margin-top: 15px; /* Adjust the margin to ensure it appears below the list item */
+    margin-left: -15px;
+    width: 200px; /* Set a width for the dropdown */
+    z-index: 9999; /* Ensure it appears above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
+}
+
+/* Style the dropdown list items */
+.nav-links ul li .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.nav-links ul li .sub-menu-1 ul li {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    color: #000;
+    font-size: 0.89rem;
+    background: transparent;
+    text-align: left;
+}
+
+/* Remove border from the last list item */
+.nav-links ul li .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect on dropdown items */
+.nav-links ul li .sub-menu-1 ul li a:hover {
+    color: #F68B1E;
+}
+
+.nav-links .menu-1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style for buttons */
+.bttn {
+    background-color: #F68B1E;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bttn:hover {
+    background-color: #E07E1B;
+}
+
+.bttn img {
+    position: relative;
+    align-items: center;
+    top: 6px;
+    left: -12px;
+}
+
+.menu-bar img {
+    position: relative;
+    top: 5px;
+    left: -12px;
+    width: 20px;
+}
+
+
+
+.col-4 {
+    display: flex;
+    flex-wrap: wrap; /* Ensure that items wrap onto new lines if needed */
+    justify-content: center; /* Center the items horizontally */
+
+    padding: 10px; /* Optional padding if you want some space around the items */
+    height: 50vh;
+}
+
+.col-5{
+    background-color: #fff;
+    width: 13%;
+    height: 47vh;
+    margin-top: 0;
+    font-size: 0.8rem;
+    line-height: 1.33;
+    padding: 8px 18px;
+    border-radius: 5px;
+    margin-bottom: 25%;
+}
+
+p:hover{
+    color: #E07E1B;
+}
+.carousel {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 70rem;
+    height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+.carousel-images{
+   display: flex;
+}
+
+.carousel-images img {
+   width: 100%;
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+   .carousel-images img {
+       height: auto; /* Adjust height for smaller screens */
+   }
+}
+
+
+.next{
+   position: absolute;
+   top:25%;
+   transform:translateY(-50%);
+   color: transparent;
+   background-color: transparent;
+   border-radius: 50px;
+   border: none;
+   width: 40px;
+   padding: 9px;
+   cursor: pointer;
+   font-size: 17px;
+   transition: background-color 0.3s;
+}
+.next:hover{
+   background-color:#777;
+   color: #fff;
+}
+
+.prev{
+   position: absolute;
+   top:25%;
+   transform:translateY(-50%);
+   color: transparent;
+   background-color:transparent;
+   border-radius: 50%;
+   border: none;
+   width: 40px;
+   padding: 9px;
+   cursor: pointer;
+   font-size: 17px;
+   transition: background-color 0.3s;
+}
+.prev:hover{
+   background-color:#777;
+   color: #fff
+}
+.prev{
+   left: 10px;
+}
+
+.next {
+   right: 10px; /* Position for next button */
+}
+
+
+
+
+.idk{
+    margin-bottom: 0;
+}
+
+.col-6{
+    margin-bottom: 1rem ;
+    background-color: #fff;
+    display:flex;
+    height: 22vh;
+    width: 100%;
+}
+
+.col-6 img{
+width: 20%;
+height: 6vh;
+  padding-top: 17px;
+  padding-left: 10px;
+  padding-right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.col-6 h4{
+    padding-top: 25px;
+    line-height: 2.5px;
+}
+.col-6 p{
+  font-size: 10px;
+  padding-top: 1rem;
+}
+.Big-banner{
+    background: url(images/Desktop_Homepage_Slider_712x384-generic.jpg);
+}
+.container {
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding: 5px 1rem;
+}
+
+.container-images {
+    display: flex;
+    gap: 5px;
+}
+
+.container-images > div { /* Image container */
+    position: relative; /* Required for box-shadow */
+    width: 100%; /* Or any specific width for each container */
+    max-width: 200px; /* Adjust this as necessary */
+    overflow: hidden; /* Hide any overflow from scaling the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both scaling and shadow */
+}
+
+.container-images > div:hover {
+    transform: scale(1.05); /* Scale the whole container including text */
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Grey shadow around the entire container */
+}
+
+.container-images img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease; /* Transition for smooth hover effect */
+    cursor: pointer;
+}
+
+.container-images p {
+    margin-top: 10px; /* Add some space between the image and text */
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+.sales{
+    background: #E61601;
+    display: flex;
+    padding: 0 2rem;
+    max-width: 74%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-left: 12.8rem;
+    justify-content: space-between;
+}
+.flash-sales{
+    display: flex;
+    gap: 1.5rem;
+}
+.flash-sales img{
+    width: 30px;
+}
+.sales p{
+    font-size: x-large;
+    color: #fff;
+
+}
+.countdown-container {
+    text-align: center;
+    background-color: #E61601;
+  }
+  
+  .timer {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .time-box {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+.slider {
+    position: relative;
+    background: #fff;
+    width: 74%;
+    margin-left: 12.8rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap images into place while scrolling */
+    display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+/* Hide the horizontal scrollbar for webkit browsers (Chrome, Safari, etc.) */
+.slider::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+/* For Firefox */
+.slider {
+    scrollbar-width: none; /* Hide the scrollbar in Firefox */
+}
+
+.images {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    width: 100%;
+}
+
+/* Each image item container */
+.image-set {
+    display: flex;
+    gap: 1px; /* Gap between images */
+}
+
+.images-item {
+    flex: 0 0 16.666%; /* Each item takes 1/6 of the width (100%/6) */
+    box-sizing: border-box;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+}
+
+.images-item img {
+    width: 100%; /* Makes sure the image fills the container */
+    height: auto; /* Maintains the aspect ratio */
+    transition: transform 0.3s ease; /* Transition for smooth scaling of the image */
+}
+
+/* Hover effect for individual images */
+.images-item:hover {
+    transform: scale(1.05); /* Scale each image container */
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Grey shadow around each image container */
+}
+.slider:hover button {
+    display: block; /* Show buttons when hovering over the slider */
+}
+
+.prev {
+    left: 10px;
+    top: 50%;
+}
+
+.next {
+    right: 10px;
+    top: 50%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.sponsored{
+    background: #FFFFFF;
+    padding:5px 10px;
+    max-width: 74%;
+    width: 100%;
+    margin-left: 12.8rem;
+}
+.sponsored p{
+    font-size: 1.5rem;
+}
+.Limited{
+    display: flex;
+    justify-content: space-between;
+    background: #FF550C;
+    padding:5px 10px;
+    max-width: 74%;
+    width: 100%;
+    margin-left: 12.8rem;
+}
+.Limited p{
+    color: #fff;
+    font-size: large;
+}
+.holiday{
+    background: #FF550C;
+    padding:5px 10px;
+    max-width: 74%;
+    width: 100%;
+    margin-left: 12.8rem;
+    text-align: center;
+}
+.holiday p{
+ color: #fff;
+ font-size: x-large;
+}
+.Top-holiday{
+    display: flex;
+    justify-content: space-between;
+    background: #FF550C;
+    padding:5px 10px;
+    max-width: 74%;
+    width: 100%;
+    margin-left: 12.8rem;
+}
+.Top-holiday p{
+    color: #fff;
+    font-size: x-large;
+}
+.sense{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 10px;
+    width: 74%;
+    margin-left: 12.8rem;
+    gap: 10px;
+}
+.whatever{
+    max-width: 100%;
+    height: 38vh;
+}
+.whatever img{
+    width: 100%;
+    height: 100%;
+}
+.water-melon{
+    max-width: 100%;
+    height: 38vh;
+}
+.water-melon img{
+    width: 100%;
+    height: 100%;
+}
+.sense > div:hover {
+    transform: scale(1.02); /* Scale the whole container including text */
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Grey shadow around the entire container */
+}
+.Top-selling{
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding:10px 10px;
+    max-width: 74%;
+    width: 100%;
+    margin-left: 12.8rem;
+}
+.smart{
+    margin-left: 12.8rem;
+    width: 74%;
+}
+.smart img{
+    width: 100%;
+}
+.wise{
+    background: #276076;
+    padding:5px 10px;
+    max-width: 74%;
+    width: 100%;
+    margin-left: 12.8rem;
+    text-align: center;
+}
+.wise p{
+    color: #fff;
+    font-size: x-large;
+}
+.poco{
+    display: flex;
+    justify-content: space-between;
+    background: #276076;
+    padding:10px 10px;
+    max-width: 74%;
+    width: 100%;
+    margin-left: 12.8rem;
+}
+.poco p{
+    color: #fff;
+    font-size: x-large;
+}
+.stories{
+    padding:5px 20px;
+    max-width: 74%;
+    margin-left: 12.8rem;
+    background: #FFFFFF;
+}
+
+
+
