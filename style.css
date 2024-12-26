@@ -733,5 +733,286 @@ button:hover {
     background: #FFFFFF;
 }
 
+.semi-foot {
+    background: #313133;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .semi-1 {
+    width: 100%; /* Ensure it takes up the full width within its column */
+    grid-column: 1; /* Occupy the first column */
+  }
+  
+  .semi-1 img {
+    width: 40%;
+    margin-left: 11rem;
+  }
+  
+  .semi-2 {
+    width: 100%;
+    grid-column: 2; /* Occupy the second column */
+  }
+  
+  .semi-2 p {
+    color: #fff;
+  }
+  
+  /* Style for the email container */
+  .email-container {
+    position: relative;
+    width: 100%; /* Ensure it takes the full width of the container */
+  }
+  
+  /* Style for the input field */
+  input[type="email"] {
+    width: 100%;
+    border: 1px solid #F68B1E;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 15px 0px;
+    font-size: 16px;
+    padding-left: 70px;
+  }
+  
+  /* Position for the email icon */
+  .email-icon {
+    position: absolute;
+    left: 1.5rem; /* Space from the left */
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+  }
+  
+  /* Style for the checkbox and label */
+  label {
+    font-size: 14px;
+  }
+  
+  .master {
+    display: flex;
+    width: 100%;
+  }
+  
+  .gender {
+    display: flex;
+  }
+  
+  .gender-button {
+    display: flex;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: border 0.3s ease, background-color 0.3s ease;
+    margin: 10px;
+    gap: 0px;
+  }
+  
+  /* Hover effect for border and background color */
+  .gender-button:hover {
+    border: 1px solid #F68B1E;
+    color: #F68B1E;
+    background: transparent;
+  }
+  
+  /* Styling for male button */
+  .male {
+    color: #fff; /* Green for male */
+  }
+  
+  /* Styling for female button */
+  .female {
+    color: #ffffff; /* Pink for female */
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkbox {
+    position: relative;
+    margin-right: 10px; /* Space between checkbox and text */
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Make the checkbox circular */
+    background-color: transparent;
+    border: none;
+    transition: 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .checkbox:hover {
+    background-color: #FCDBB9; /* Hover color */
+    border-radius: 50%; /* Ensure it stays circular when hovered */
+  }
+  
+  .checkbox input {
+    appearance: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the input inside the circle */
+    width: 50%;
+    height: 50%;
+    border-radius: none; /* Make the input inside the checkbox circular */
+    border: 2px solid #A2A2A5;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .checkbox input:checked {
+    background-color: #F68B1E;
+    border: none; /* Color when checked */
+  }
+  
+  .checkbox input:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the checkmark */
+  }
+  
+  .checkbox-text {
+    width: 85%;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 0px; /* Space between checkbox and text */
+    transition: 0.3s; /* Smooth transition for text color */
+  }
+  
+  .rubbish {
+    color: #F68B1E;
+    font-weight: bold;
+    margin-left: 2.3rem;
+  }
+  
+  .rubbish a {
+    text-decoration: none;
+    color: #F68B1E;
+  }
+  
+  .rubbish:hover {
+    text-decoration: underline;
+  }
+  
+  .semi-3 {
+    display: flex;
+    width: 100%; /* Ensure it takes up the full width within its column */
+    grid-column: 3; /* Occupy the third column */
+    color: #fff;
+  }
+  .make{
+    width: 30%;
+  }
+  .make img{
+width: 100%;
+  }
+  .semi-3 p {
+color: #fff;
+  }
+  
+  
 
 
+
+
+
+footer{
+    background-color: #535357;
+}
+          .footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+            gap: 20px;
+            padding: 20px;
+            padding-left: 12rem;
+            color: #fff;
+          }
+          
+          .footer-column {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .footer-column h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #f68b1e; /* Orange for headings */
+          }
+          
+          .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          .footer-column ul li {
+            margin: 5px 0;
+            font-size: 14px;
+          }
+          
+          /* Text hover effect with underline */
+          .footer-column ul li:hover {
+            text-decoration: underline; /* Underline text on hover */
+            cursor: pointer;
+          }
+          
+          /* Adjust gap between 'Need Help?' and 'Useful Links' */
+          footer .footer-column:nth-child(1), 
+          footer .footer-column:nth-child(2) {
+            grid-column: span 1; /* Each takes 1 column */
+            margin-bottom: 15px; /* Reduce space between 'Need Help?' and 'Useful Links' */
+          }
+          
+          /* Make the last column ("Jumia International") take full width */
+          footer .footer-column:nth-child(5) {
+            grid-column: span 4; /* This makes it span the entire width of the grid */
+          }
+          
+          /* Responsiveness */
+          @media (max-width: 768px) {
+            footer {
+              grid-template-columns: 1fr; /* Stack the columns on small screens */
+            }
+          }
+          
+
+
+
+
+          .boss{
+            display: flex;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 2rem;
+            margin-left: 11.5rem;
+            width: 75%;
+          }
+          .social-icon {
+            text-decoration: none;
+            margin: 10px;
+            font-size: 20px;
+            color:#fff;
+          }
+          
+          .social-icon:hover {
+            color: #00aced; /* Change color on hover */
+          }
+          .wha{
+            color:#fff;
+            margin-left: 9rem;
+          }
+          .play{
+            text-align: center;
+          }
+          
+          
